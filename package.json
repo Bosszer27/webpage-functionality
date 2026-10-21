@@ -1,0 +1,1 @@
+{"name":"my-vault","private":true,"type":"module","scripts":{"dev":"netlify dev --port 8889"},"dependencies":{"@netlify/blobs":"^10.0.0","@netlify/database":"^2.0.1","@netlify/functions":"^6.0.3","@netlify/identity":"^2.0.0","cheerio":"^1.2.0","drizzle-orm":"beta","zod":"^4.0.0"},"devDependencies":{"@types/node":"^22.0.0","drizzle-kit":"beta","typescript":"^5.9.0"}}

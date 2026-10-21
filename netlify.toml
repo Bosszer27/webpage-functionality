@@ -1,0 +1,18 @@
+[build]
+  publish = "site"
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+[dev]
+  framework = "#static"
+  publish = "site"
+  port = 8889
+
+[functions.workspace]
+  included_files = ["private/vault.html"]
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Referrer-Policy = "same-origin"
+    X-Content-Type-Options = "nosniff"

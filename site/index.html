@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Vault · พื้นที่ทำงานของสมาชิก</title>
+<meta name="description" content="สมัครสมาชิก My Vault เพื่อจัดเก็บไฟล์ ลิงก์ Prompt และใช้เครื่องมือร่วมกับทีม">
+<link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/auth.css">
+</head>
+<body>
+<header><a href="/" class="brand">My Vault<span>คลังเดียวกัน ทำงานด้วยกัน</span></a></header>
+<main class="auth-layout">
+<section class="intro"><p class="eyebrow">พื้นที่ของทีม</p><h1>ทุกเครื่องมือ<br>อยู่ในคลังเดียวกัน<span class="dot">.</span></h1><p class="lead">เก็บไฟล์ แชร์ลิงก์ จัดระเบียบ Prompt และดูแลโปรเจกต์ร่วมกัน ด้วยเครื่องมือที่คุ้นเคย</p><div class="intro-note"><span class="note-line"></span><p>คลังนี้เปิดสำหรับสมาชิก<br>เข้าสู่ระบบเพื่อดูข้อมูลและเริ่มทำงานร่วมกับทีม</p></div><p class="privacy">ชื่อที่แสดงและสถานะออนไลน์ของคุณจะปรากฏให้สมาชิกคนอื่นเห็น อีเมลไม่แสดงในรายชื่อสมาชิก</p></section>
+<section class="auth-card" aria-labelledby="authTitle"><p class="eyebrow">MY VAULT / สมาชิก</p><h2 id="authTitle">เข้าสู่พื้นที่ทำงาน</h2><p id="authDescription">ยินดีต้อนรับกลับมา เข้าสู่ระบบเพื่อเปิดคลังของทีม</p>
+<div class="mode-switch" id="modeSwitch"><button type="button" data-mode="login" aria-pressed="true">เข้าสู่ระบบ</button><button type="button" data-mode="signup" aria-pressed="false">สมัครสมาชิก</button></div>
+<form id="authForm">
+<label id="nameField" hidden>ชื่อที่แสดง<input id="name" autocomplete="name" maxlength="100"></label>
+<label id="emailField">อีเมล<input id="email" type="email" autocomplete="email" required maxlength="254"></label>
+<label id="passwordField">รหัสผ่าน<input id="password" type="password" autocomplete="current-password" required minlength="8" maxlength="128"><small>อย่างน้อย 8 ตัวอักษร</small></label>
+<button class="primary" id="authSubmit" type="submit">เข้าสู่ระบบ</button>
+</form>
+<button type="button" class="text-button" id="forgotPassword">ลืมรหัสผ่าน</button>
+<p id="authStatus" role="status" aria-live="polite">กำลังตรวจสอบการเข้าสู่ระบบ…</p>
+<noscript>กรุณาเปิด JavaScript เพื่อสมัครสมาชิกและใช้งานคลังร่วม</noscript>
+</section>
+</main><footer>My Vault · ไฟล์ ลิงก์ Prompt และเครื่องมือสำหรับทีม</footer>
+<script type="module" src="/auth.js"></script>
+</body></html>
