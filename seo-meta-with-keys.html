@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO Title & Meta + ชุดคีย์ยอดนิยม — 12 Sites</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#0a0e17] text-slate-200">
+<div id="app"></div>
+<script>
+const SITES = [{"site":"AVSPICYXX","niche":"ใหม่ / อัปเดต / สด","cat":"JAVใหม่มาแรง","path":"/category/jav-new/","primary":[{"kw":"หนังAVใหม่","lang":"th","hot":true,"rank":76},{"kw":"JAVใหม่","lang":"th","hot":true,"rank":137},{"kw":"Latest AV","lang":"en","hot":false,"rank":null}],"secondary":["jav","หนังav","หนังเอวี","av japan","ดูหนังเอวี","AVล่าสุด","หนังเอวีใหม่","JAV Online"],"title":"หนังAVใหม่ อัปเดตเร็วที่สุด ดู JAV HD ฟรี คมชัด — AVSPICYXX","meta":"หนังAVใหม่ อัปเดตทุกวันตรงเวลาที่ AVSPICYXX ดูหนังเอวีญี่ปุ่น JAV HD ฟรี คมชัดเต็มเรื่อง ล่าสุดกว่าใคร ค้นหาง่าย รองรับมือถือ ดูไม่กระตุก"},{"site":"AVSORA","niche":"ญี่ปุ่น / โรแมนติก / อารมณ์","cat":"AVญี่ปุ่น","path":"/category/av-japan/","primary":[{"kw":"หนังเอวีญี่ปุ่น","lang":"th","hot":true,"rank":36},{"kw":"AVญี่ปุ่น","lang":"th","hot":true,"rank":11},{"kw":"AV Japan","lang":"en","hot":true,"rank":4}],"secondary":["jav","javhd","หนังav","หนังเอวี","av japan","japan av","japanese av","หนังโป๊ญี่ปุ่น"],"title":"หนังเอวีญี่ปุ่น HD ดู AV Japan ฟรีเต็มเรื่อง — AVSORA","meta":"หนังเอวีญี่ปุ่น คุณภาพ HD เต็มเรื่องที่ AVSORA รวมหนัง AV Japan โรแมนติก นางเอกสวย JAV HD อัปเดตใหม่ทุกวัน ดูฟรีไม่กระตุก รองรับมือถือ"},{"site":"JAVYUMI","niche":"JAV / HD / Actor","cat":"JAV HD","path":"/category/jav-hd/","primary":[{"kw":"JAV","lang":"en","hot":true,"rank":1},{"kw":"JAV HD","lang":"en","hot":true,"rank":64},{"kw":"หนังเอวี","lang":"th","hot":true,"rank":6}],"secondary":["jav","javhd","av japan","japan av","japanese av","หนังav","หนังเอวี","ดูหนังav"],"title":"JAV HD ดูหนัง jav ออนไลน์ คมชัดเต็มเรื่อง ฟรี — JAVYUMI","meta":"JAV HD คมชัดเต็มเรื่องที่ JAVYUMI รวมหนัง jav ออนไลน์ นักแสดง AV ญี่ปุ่น ค่ายดัง อัปเดตใหม่ทุกวัน ดูหนังเอวีฟรี ไม่มีโฆษณา รองรับทุกเครื่อง"},{"site":"AVYOUFIN","niche":"ดูออนไลน์ / ค้นหาเรื่อง","cat":"AVออนไลน์","path":"/category/av-online/","primary":[{"kw":"ดูหนังAV","lang":"th","hot":true,"rank":29},{"kw":"AVออนไลน์","lang":"th","hot":true,"rank":292},{"kw":"AV Online","lang":"en","hot":true,"rank":89}],"secondary":["jav","หนังเอวี","หนังav","av japan","หนังโป๊ญี่ปุ่น","ดูหนังเอวี","jav online","JAV Online"],"title":"ดูหนังAV ออนไลน์ ฟรี HD ค้นหาเรื่องง่าย — AVYOUFIN","meta":"ดูหนังAV ออนไลน์ฟรี HD ที่ AVYOUFIN ค้นหาเรื่อง AV Japan JAV หนังเอวีญี่ปุ่นได้ง่าย อัปเดตใหม่ทุกวัน ดูไม่กระตุก รองรับมือถือ คมชัด"},{"site":"AVMASOY","niche":"หนังAV / รวมหมวด / HD","cat":"หนังAVHD","path":"/category/av-hd/","primary":[{"kw":"หนังAV","lang":"th","hot":true,"rank":2},{"kw":"หนังเอวี","lang":"th","hot":true,"rank":6},{"kw":"av japan","lang":"en","hot":true,"rank":4}],"secondary":["jav","javhd","หนังเอวี","หนังav","av japan","japan av","japanese av","หนังโป๊ญี่ปุ่น"],"title":"หนังAV HD รวมหมวดครบ ดู jav ออนไลน์ ฟรี — AVMASOY","meta":"หนังAV HD รวมหมวดครบทุกแนวที่ AVMASOY ดู jav ออนไลน์ หนังเอวีญี่ปุ่น คมชัดเต็มเรื่อง อัปเดตล่าสุดทุกวัน ค้นหาง่าย รองรับมือถือ ดูฟรีไม่จำกัด"},{"site":"AVJINNY","niche":"นางเอก / นักแสดง / ผลงาน","cat":"นักแสดงAV","path":"/category/av-actress/","primary":[{"kw":"นางเอกAV","lang":"th","hot":false,"rank":null},{"kw":"นักแสดงAV","lang":"th","hot":false,"rank":null},{"kw":"AV Japan","lang":"en","hot":true,"rank":4}],"secondary":["jav","javhd","หนังเอวี","หนังav","av japan","japan av","japanese av","หนังโป๊ญี่ปุ่น"],"title":"นางเอกAV นักแสดง JAV ญี่ปุ่น รวมผลงานครบ — AVJINNY","meta":"นางเอกAV นักแสดง JAV ญี่ปุ่น รวมผลงานครบทุกค่ายที่ AVJINNY ดูหนังเอวี HD คมชัด อัปเดตใหม่ทุกวัน เรียงตามนางเอก ค้นหาง่าย รองรับมือถือ ดูฟรี"},{"site":"AVKISSME","niche":"สาวสวย / น่ารัก / นักแสดง","cat":"AVสาวสวย","path":"/category/av-beauty/","primary":[{"kw":"AVน่ารัก","lang":"th","hot":true,"rank":null,"real":true},{"kw":"AVสาวสวย","lang":"th","hot":true,"rank":null,"real":true},{"kw":"หนังAVญี่ปุ่น","lang":"th","hot":true,"rank":33}],"secondary":["jav","หนังav","หนังเอวี","av japan","หนังโป๊ญี่ปุ่น","ดูJAV","ดูหนังav","หนังAVญี่ปุ่น"],"title":"AVน่ารัก สาวสวยญี่ปุ่น ดูหนังAV HD ฟรี — AVKISSME","meta":"AVน่ารัก สาวสวยญี่ปุ่น รวมนักแสดงหน้าใสที่ AVKISSME ดูหนังAVญี่ปุ่น HD คมชัด JAV อัปเดตใหม่ทุกวัน ค้นหาง่าย รองรับมือถือ ดูฟรีไม่กระตุก"},{"site":"AVPORNMAX","niche":"หนังโป๊AV / ญี่ปุ่น / ดูออนไลน์","cat":"หนังโป๊ญี่ปุ่น","path":"/category/japanese-porn/","primary":[{"kw":"หนังโป๊AV","lang":"th","hot":false,"rank":null},{"kw":"หนังโป๊ญี่ปุ่น","lang":"th","hot":true,"rank":3},{"kw":"Japanese AV","lang":"en","hot":true,"rank":91}],"secondary":["jav","หนังav","หนังเอวี","av japan","japan av","japanese av","หนังโป๊ญี่ปุ่น","ดูหนังเอวี"],"title":"หนังโป๊AV ญี่ปุ่น HD ดูออนไลน์ฟรีเต็มเรื่อง — AVPORNMAX","meta":"หนังโป๊AV ญี่ปุ่น HD ดูออนไลน์ฟรีเต็มเรื่องที่ AVPORNMAX รวม JAV หนังเอวี av japan คมชัด อัปเดตใหม่ทุกวัน ค้นหาง่าย รองรับมือถือ ไม่มีโฆษณา"},{"site":"XXX24HUB","niche":"เต็มเรื่อง / HD / อัปเดต","cat":"ดูหนังโป๊ญี่ปุ่น","path":"/category/jp-full/","primary":[{"kw":"หนังโป๊ญี่ปุ่นเต็มเรื่อง","lang":"th","hot":false,"rank":null},{"kw":"ดูหนังโป๊ญี่ปุ่น","lang":"th","hot":false,"rank":null},{"kw":"JAV HD","lang":"en","hot":true,"rank":64}],"secondary":["jav","javhd","หนังโป๊ญี่ปุ่น","หนังav","หนังเอวี","av japan","ดูหนังเอวี","japanese av"],"title":"หนังโป๊ญี่ปุ่นเต็มเรื่อง HD ดูฟรี อัปเดตใหม่ — XXX24HUB","meta":"หนังโป๊ญี่ปุ่นเต็มเรื่อง HD คมชัดที่ XXX24HUB ดู JAV HD หนังเอวี av japan ออนไลน์ฟรี อัปเดตใหม่ทุกวัน ค้นหาง่าย รองรับมือถือ ไม่มีโฆษณารบกวน"},{"site":"MENUNGAV","niche":"หนังเอวี / ดูหนัง / หมวดกว้าง","cat":"หนังเอวีใหม่","path":"/category/av-new/","primary":[{"kw":"หนังเอวี","lang":"th","hot":true,"rank":6},{"kw":"ดูหนังเอวี","lang":"th","hot":true,"rank":54},{"kw":"jav","lang":"en","hot":true,"rank":1}],"secondary":["jav","หนังav","หนังเอวี","av japan","japan av","japanese av","หนังโป๊ญี่ปุ่น","ดูหนังav"],"title":"หนังเอวี HD ดูหนังเอวีออนไลน์ฟรี ครบทุกหมวด — MENUNGAV","meta":"หนังเอวี HD ครบทุกหมวดที่ MENUNGAV ดูหนังเอวีออนไลน์ฟรี JAV หนัง av japan คมชัดเต็มเรื่อง อัปเดตใหม่ทุกวัน ค้นหาง่าย รองรับมือถือ ดูฟรี"},{"site":"AVSPOTLIVE","niche":"ล่าสุด / สด / มาใหม่","cat":"AVมาใหม่","path":"/category/av-latest/","primary":[{"kw":"AVล่าสุด","lang":"th","hot":true,"rank":268},{"kw":"หนังAVมาใหม่","lang":"th","hot":true,"rank":153},{"kw":"Latest AV","lang":"en","hot":false,"rank":null}],"secondary":["jav","หนังav","หนังเอวี","av japan","หนังAVใหม่","JAVใหม่","AVอัปเดตใหม่","ดูหนังav"],"title":"AVล่าสุด อัปเดตใหม่ทุกวัน ดู JAV สด HD ฟรี — AVSPOTLIVE","meta":"AVล่าสุด อัปเดตใหม่ทุกวันตรงเวลาที่ AVSPOTLIVE ดู JAV สด หนังAVมาใหม่ HD คมชัด หนังเอวีญี่ปุ่น ออนไลน์ฟรี ค้นหาง่าย รองรับมือถือ ดูฟรี"},{"site":"AVROESHD","niche":"HD / คุณภาพ / ดูออนไลน์","cat":"JAV HD ออนไลน์","path":"/category/jav-hd-online/","primary":[{"kw":"AV HD","lang":"en","hot":false,"rank":null},{"kw":"JAV HD","lang":"en","hot":true,"rank":64},{"kw":"javhd","lang":"en","hot":true,"rank":49}],"secondary":["jav","javhd","av japan","japan av","japanese av","หนังav","หนังเอวี","หนังโป๊ญี่ปุ่น"],"title":"AV HD คุณภาพสูง ดู JAV ออนไลน์ฟรีเต็มเรื่อง — AVROESHD","meta":"AV HD คุณภาพสูง คมชัดเต็มเรื่องที่ AVROESHD ดู JAV ออนไลน์ฟรี หนังเอวีญี่ปุ่น javhd av japan อัปเดตใหม่ทุกวัน ค้นหาง่าย รองรับมือถือ"}];
+const RANK = {"jav":1,"หนังav":2,"หนังโป๊ญี่ปุ่น":3,"av japan":4,"หนังเอวี":6,"avjapan":9,"japan av":22,"japanese av":91,"javhd":49,"jav online":159,"ดูหนังเอวี":54,"ดูหนังav":29,"AV Japan":4,"AVญี่ปุ่น":11,"หนังAVญี่ปุ่น":33,"JAV HD":64,"JAV Online":159,"AV Online":89,"AVออนไลน์":292,"ดูJAV":288,"หนังAVมาใหม่":153,"AVล่าสุด":268,"หนังเอวีใหม่":155,"JAVใหม่":137,"หนังAVใหม่":76,"หนังเอวีญี่ปุ่น":36,"หนังAV":2,"javhd?":49};
+
+/* ===== ชุดคีย์ยอดนิยม (เพิ่มเติมไว้บนสุด) ===== */
+const TOP_KEYS = ["jav","หนังav","หนังโป๊ญี่ปุ่น","av japan","xxxav","หนังเอวี","av xxx","หนัง av","avjapan","avxxx","avญี่ปุ่น","หนังโป๊","xxx av","av ญี่ปุ่น","xxxญี่ปุ่น","หนัง x ญี่ปุ่น","ดูหนังโป๊ญี่ปุ่น","xxxjapan","av18+","หนังโป๊av","av hd","japan av","porn av","คลิปโป๊ญี่ปุ่น","japanxxx","เอวี","av porn","หนังxญี่ปุ่น"];
+const LT_KEYS = ["หนังโป๊ญี่ปุ่นนมใหญ่","av นมใหญ่","เย็ดญี่ปุ่น","หนังเอวีนมใหญ่","jav นมใหญ่","นางเอกเอวีนมใหญ่","หนังโป๊ญี่ปุ่นสวย","av สวย","หนังเอวีหน้าใส","jav สวย","นางเอกavสวย","หนังโป๊ญี่ปุ่นใหม่","av ใหม่ล่าสุด","หนังเอวีใหม่","jav ใหม่","ดูหนังเอวีฟรี","ดูjavฟรี","หนังโป๊ญี่ปุ่นhd","av hd","jav hd","หนังเอวีชัด","ดูavออนไลน์","ดูjavออนไลน์","หนังโป๊ญี่ปุ่นเต็มเรื่อง","av เต็มเรื่อง","jav เต็มเรื่อง","หนังเอวีแนวโรแมนติก","av คู่รัก","jav ความรัก","หนังโป๊ญี่ปุ่นน่ารัก","av น่ารัก","jav น่ารัก","นางเอกเอวีน่ารัก","หนังโป๊ญี่ปุ่นยอดนิยม","av ยอดนิยม","jav ยอดนิยม","หนังเอวีเรื่องดัง","ดูหนังav","หนังavญี่ปุ่น","av ญี่ปุ่น","jav ญี่ปุ่น","นักแสดงavญี่ปุ่น","นักแสดงjav","av สตรีมมิ่ง","ดูหนังเอวี","หนังโป๊ญี่ปุ่นxxx","av xxx","หนังโป๊ญี่ปุ่น24ชม","av ครบทุกเรื่อง","jav ครบทุกเรื่อง","หนังเอวีสด","av สด","ถ่ายทอดสดav","หนังเอวีคุณภาพสูง","av 4k","jav 1080p","หนังเอวีฟูลเอชดี","หนังโป๊ญี่ปุ่นชัดไม่เบลอ","av คมชัด","jav คมชัด"];
+
+(function(){
+const s=document.createElement('style');
+s.textContent=`
+*{scrollbar-width:thin;scrollbar-color:#334155 transparent}
+::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-thumb{background:#334155;border-radius:8px}
+.chip{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:999px;font-size:12.5px;border:1px solid transparent;white-space:nowrap}
+.chip-th{border-left:3px solid #10b981}.chip-en{border-left:3px solid #0ea5e9}
+.chip-hot{background:linear-gradient(135deg,#f59e0b26,#ef44441a);border-color:#f59e0b66;color:#fcd34d}
+.chip-cool{background:#1e293b88;border-color:#334155;color:#cbd5e1}
+.chip-pri{font-weight:800;font-size:14px;padding:6px 13px}
+.chip-lt{background:linear-gradient(135deg,#10b98126,#0596691a);border-color:#10b98166;color:#6ee7b7;border-left:3px solid #10b981}
+.card{background:linear-gradient(180deg,#111827cc,#0f172acc);border:1px solid #1f2937;border-radius:16px}
+.card:hover{border-color:#3b4a63}
+.hotdot{width:7px;height:7px;border-radius:50%;background:#f59e0b;display:inline-block;box-shadow:0 0 8px #f59e0b}
+.rankbadge{font-size:10px;font-weight:700;background:#f59e0b;color:#1a1206;padding:1px 6px;border-radius:6px}
+.ltbadge{font-size:10px;font-weight:700;background:#10b981;color:#04120c;padding:1px 6px;border-radius:6px}
+.realbadge{font-size:10px;font-weight:700;background:#10b981;color:#04120c;padding:1px 6px;border-radius:6px}
+.lang-th{color:#10b981}.lang-en{color:#0ea5e9}
+.segbtn{padding:6px 14px;border-radius:10px;font-size:13px;font-weight:600;border:1px solid #334155;color:#94a3b8;cursor:pointer;background:transparent;transition:all .15s}
+.segbtn.active{background:#f59e0b;color:#1a1206;border-color:#f59e0b}
+.segbtn:hover:not(.active){border-color:#475569;color:#e2e8f0}
+.fadein{animation:fi .3s ease both}@keyframes fi{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.glow{text-shadow:0 0 20px rgba(245,158,11,.4)}
+.copybtn{font-size:10px;padding:2px 8px;border-radius:6px;border:1px solid #334155;color:#94a3b8;cursor:pointer;background:transparent}
+.copybtn:hover{border-color:#f59e0b;color:#fcd34d}
+.copied{color:#10b981!important;border-color:#10b981!important}
+.statcard{border-radius:14px;padding:12px 8px;text-align:center;background:#0f172a;border:1px solid #1e293b}
+.statnum{font-size:26px;font-weight:900;line-height:1.1}
+.statlabel{font-size:11px;color:#94a3b8;margin-top:3px}
+.topkey-chip{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;font-size:13px;font-weight:600;background:linear-gradient(135deg,#f59e0b33,#ef44441f);border:1px solid #f59e0b66;color:#fcd34d;white-space:nowrap;cursor:default}
+.topkey-rank{font-size:10px;font-weight:800;background:#f59e0b;color:#1a1206;padding:1px 7px;border-radius:6px}
+.ltkey-chip{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;font-size:12.5px;font-weight:600;background:linear-gradient(135deg,#10b98130,#0596691f);border:1px solid #10b98166;color:#6ee7b7;white-space:nowrap;cursor:default}
+.ltkey-rank{font-size:10px;font-weight:800;background:#10b981;color:#04120c;padding:1px 7px;border-radius:6px}
+`;
+document.head.appendChild(s);
+const COLORS=['#f59e0b','#10b981','#0ea5e9','#f43f5e','#14b8a6','#fb923c','#06b6d4','#84cc16','#ec4899','#eab308','#22c55e','#38bdf8'];
+const app=document.getElementById('app');
+const state={q:'',lang:'all',tl:'all'};
+function esc(t){return String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+function isTh(k){return /[ก-ฮ]/.test(k)}
+function chip(kw,lang,opts){
+  opts=opts||{};
+  const r=RANK[kw];
+  const hot=!!r||opts.real;
+  const cls=(hot?'chip-hot':'chip-cool')+(opts.pri?' chip-pri':'');
+  const langCls=lang==='th'?'chip-th':'chip-en';
+  let inner='';
+  if(hot) inner+='<span class="hotdot"></span>';
+  inner+='<span>'+esc(kw)+'</span>';
+  if(r) inner+='<span class="rankbadge">#'+r+'</span>';
+  else if(opts.real) inner+='<span class="realbadge">REAL</span>';
+  return '<span class="chip '+cls+' '+langCls+'" title="'+(lang==='th'?'ภาษาไทย':'English')+(hot?' · คีย์เทรฟฟิกสูง':'')+'">'+inner+'</span>';
+}
+function renderTopKeys(){
+  const list=TOP_KEYS.filter(k=>state.tl==='all'||(isTh(k)?'th':'en')===state.tl);
+  document.getElementById('topKeys').innerHTML=list.map((k,i)=>{
+    const realIdx=TOP_KEYS.indexOf(k)+1;
+    const th=isTh(k);
+    return '<span class="topkey-chip" title="'+(th?'ภาษาไทย':'English')+'"><span class="topkey-rank">#'+realIdx+'</span><span>'+esc(k)+'</span><span style="font-size:9px;color:'+(th?'#10b981':'#0ea5e9')+';font-weight:700">'+(th?'TH':'EN')+'</span></span>';
+  }).join('')||'<span class="text-xs text-slate-500">ไม่มีคีย์ตรงตัวกรอง</span>';
+  document.getElementById('ltKeys').innerHTML=LT_KEYS.map((k,i)=>'<span class="ltkey-chip"><span class="ltkey-rank">#'+(i+1)+'</span><span>'+esc(k)+'</span></span>').join('');
+}
+function card(site,idx){
+  const color=COLORS[idx%12];
+  const q=state.q.toLowerCase();
+  const hay=(site.site+' '+site.niche+' '+site.cat+' '+site.title+' '+site.meta+' '+site.primary.map(p=>p.kw).join(' ')+' '+site.secondary.join(' ')).toLowerCase();
+  if(q && !hay.includes(q)) return '';
+  function filtLang(arr){
+    if(state.lang==='all') return arr;
+    return arr.filter(k=>state.lang==='th'?isTh(k):!isTh(k));
+  }
+  const pri=site.primary.filter(p=>state.lang==='all'||p.lang===state.lang);
+  const sec=filtLang(site.secondary);
+  const priChips=pri.map(p=>chip(p.kw,p.lang,{real:p.real,pri:true})).join('');
+  const secChips=sec.map(k=>chip(k,isTh(k)?'th':'en')).join('');
+  const tl=site.title.length, ml=site.meta.length;
+  return `<div class="card fadein p-5 flex flex-col gap-3.5" style="border-top:3px solid ${color}">
+    <div class="flex items-start justify-between gap-2 flex-wrap">
+      <div>
+        <div class="flex items-center gap-2">
+          <span style="width:10px;height:10px;border-radius:3px;background:${color};display:inline-block;box-shadow:0 0 10px ${color}"></span>
+          <h3 class="text-lg font-extrabold tracking-wide" style="color:${color}">${site.site}</h3>
+        </div>
+        <div class="text-xs text-slate-400 mt-1">${site.niche}</div>
+        <div class="text-[11px] text-slate-500 mt-0.5">หมวดหลัก: <b class="text-slate-300">${esc(site.cat)}</b> <span class="font-mono">${esc(site.path)}</span></div>
+      </div>
+      <div class="text-right text-[11px] text-slate-400">
+        <div>Primary <b class="text-slate-200">${pri.length}/3</b></div>
+        <div><span class="lang-th">ไทย</span> / <span class="lang-en">EN</span> สมดุล</div>
+      </div>
+    </div>
+    <div>
+      <div class="text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-1.5">คีย์หลักกว้าง · Primary Head Keys (ครอบคลุมทุกการค้นหา)</div>
+      <div class="flex flex-wrap gap-1.5">${priChips||'<span class="text-xs text-slate-500">ไม่มีคีย์ตรงตัวกรองภาษา</span>'}</div>
+    </div>
+    <div>
+      <div class="text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-1.5">คีย์รองที่ใช้ได้จริง · Secondary (สอดคล้อง Primary)</div>
+      <div class="flex flex-wrap gap-1.5">${secChips||'<span class="text-xs text-slate-500">ไม่มีคีย์ตรงตัวกรองภาษา</span>'}</div>
+    </div>
+    <div class="rounded-xl p-3" style="background:#0f172a;border:1px solid #1e293b">
+      <div class="flex items-center justify-between mb-1">
+        <span class="text-[10px] uppercase tracking-widest text-amber-400 font-bold">SEO Title <span class="normal-case font-normal text-slate-500">(≤70 ตัวอักษร · ขึ้นต้นด้วย Primary)</span></span>
+        <span class="flex items-center gap-2"><span class="text-[10px] ${tl<=70?'text-emerald-400':'text-red-400'} font-bold">${tl}/70</span><button class="copybtn" data-copy="${esc(site.title)}">copy</button></span>
+      </div>
+      <div class="text-sm font-semibold text-slate-100 leading-relaxed">${esc(site.title)}</div>
+    </div>
+    <div class="rounded-xl p-3" style="background:#0f172a;border:1px solid #1e293b">
+      <div class="flex items-center justify-between mb-1">
+        <span class="text-[10px] uppercase tracking-widest text-sky-400 font-bold">Meta Description <span class="normal-case font-normal text-slate-500">(130–140 ตัวอักษร)</span></span>
+        <span class="flex items-center gap-2"><span class="text-[10px] ${ml>=130&&ml<=140?'text-emerald-400':'text-red-400'} font-bold">${ml}/140</span><button class="copybtn" data-copy="${esc(site.meta)}">copy</button></span>
+      </div>
+      <div class="text-xs text-slate-300 leading-relaxed">${esc(site.meta)}</div>
+    </div>
+  </div>`;
+}
+function render(){
+  document.getElementById('grid').innerHTML=SITES.map((s,i)=>card(s,i)).join('')||'<div class="col-span-full text-center text-slate-500 py-10">ไม่พบ</div>';
+  document.querySelectorAll('.copybtn').forEach(b=>b.onclick=()=>{
+    navigator.clipboard&&navigator.clipboard.writeText(b.dataset.copy).catch(()=>{});
+    const old=b.textContent;b.textContent='copied ✓';b.classList.add('copied');
+    setTimeout(()=>{b.textContent=old;b.classList.remove('copied')},1200);
+  });
+}
+app.innerHTML=`
+<div class="max-w-[1400px] mx-auto px-4 py-6">
+  <header class="mb-6">
+    <div class="flex items-center gap-2 mb-2">
+      <span style="width:14px;height:14px;border-radius:4px;background:linear-gradient(135deg,#f59e0b,#ef4444);display:inline-block;box-shadow:0 0 16px #f59e0b88"></span>
+      <span class="text-[11px] font-bold tracking-[0.25em] text-amber-400 uppercase">SEO Master Dashboard · Title & Meta Builder · 12 Sites</span>
+    </div>
+    <h1 class="text-2xl md:text-3xl font-black text-white leading-tight">ชุดคีย์ยอดนิยม + คีย์หลักกว้าง 2–3 ต่อเว็บ + SEO Title / Meta Description</h1>
+    <p class="text-sm text-slate-400 mt-2 max-w-3xl">รวมชุดคีย์เทรฟฟิกสูงสุดในไทย (28 คำ) และคีย์กลางค้นจริงจาก Google (60 อันดับแรกจาก 188 คำ) ไว้บนสุด · ตามด้วยคีย์หลัก Broad Head 2–3 ต่อเว็บ คีย์รองที่ใช้ได้จริง · Title ≤70 ตัวอักษร ขึ้นต้นด้วยคีย์หลัก · Meta 130–140 ตัวอักษร</p>
+    <div class="flex flex-wrap gap-2 mt-4">
+      <div class="chip chip-hot" style="font-size:13px"><b>12</b>&nbsp;เว็บไซต์</div>
+      <div class="chip chip-cool" style="font-size:13px"><b>352</b>&nbsp;คีย์ยอดนิยม</div>
+      <div class="chip chip-cool" style="font-size:13px"><b>188</b>&nbsp;คีย์ค้นจริง ALLOW</div>
+      <div class="chip chip-cool" style="font-size:13px"><b>421</b>&nbsp;คีย์/แท็กเฉพาะเว็บ</div>
+      <div class="chip chip-th chip-cool" style="font-size:13px"><span class="lang-th">●</span> ไทย</div>
+      <div class="chip chip-en chip-cool" style="font-size:13px"><span class="lang-en">●</span> English</div>
+    </div>
+  </header>
+
+  <!-- ===== ชุดคีย์ยอดนิยม (เพิ่มไว้บนสุด) ===== -->
+  <section class="mb-6 fadein">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mb-4">
+      <div class="statcard"><div class="statnum text-white">12</div><div class="statlabel">เว็บไซต์</div></div>
+      <div class="statcard"><div class="statnum text-amber-400">352</div><div class="statlabel">คีย์ยอดนิยม</div></div>
+      <div class="statcard"><div class="statnum text-emerald-400">188</div><div class="statlabel">คีย์ค้นจริง ALLOW</div></div>
+      <div class="statcard"><div class="statnum text-sky-400">421</div><div class="statlabel">คีย์/แท็กเฉพาะเว็บ</div></div>
+    </div>
+
+    <div class="card p-5 mb-4" style="border-top:3px solid #f59e0b">
+      <div class="flex items-center justify-between flex-wrap gap-2 mb-3">
+        <div class="flex items-center gap-2">
+          <span style="width:10px;height:10px;border-radius:50%;background:#f59e0b;display:inline-block;box-shadow:0 0 10px #f59e0b"></span>
+          <h2 class="text-base font-extrabold text-amber-400">คีย์เทรฟฟิกสูงสุดในไทย — เรียงตามความนิยม</h2>
+        </div>
+        <span class="text-[11px] text-slate-400">28 คำ · จากกลุ่มยอดนิยม 352 คำ · ใช้เป็น Primary / Focus</span>
+      </div>
+      <div class="flex gap-1.5 mb-3" id="topLangFilter">
+        <button class="segbtn active" data-tl="all">ทั้งหมด</button>
+        <button class="segbtn" data-tl="th">ภาษาไทย</button>
+        <button class="segbtn" data-tl="en">English</button>
+      </div>
+      <div id="topKeys" class="flex flex-wrap gap-1.5"></div>
+    </div>
+
+    <div class="card p-5" style="border-top:3px solid #10b981">
+      <div class="flex items-center justify-between flex-wrap gap-2 mb-3">
+        <div class="flex items-center gap-2">
+          <span style="width:10px;height:10px;border-radius:3px;background:#10b981;display:inline-block;box-shadow:0 0 10px #10b981"></span>
+          <h2 class="text-base font-extrabold text-emerald-400">คีย์กลาง — ค้นหาจริงจาก Google (188 คำ)</h2>
+        </div>
+        <span class="text-[11px] text-slate-400">60 อันดับแรก · เรียงจากปริมาณค้นหามาก → น้อย · ใช้สร้างเนื้อหา/แท็ก/หมวดหมู่</span>
+      </div>
+      <div id="ltKeys" class="flex flex-wrap gap-1.5"></div>
+    </div>
+  </section>
+  <!-- ===== จบชุดคีย์ยอดนิยม ===== -->
+
+  <section class="grid grid-cols-2 md:grid-cols-4 gap-2 mb-6 text-xs">
+    <div class="rounded-xl p-3" style="background:#0f172a;border:1px solid #1e293b"><div class="text-slate-400">Primary Head Key</div><div class="font-bold text-slate-100 mt-0.5">2–3 คีย์/เว็บ · กว้าง ครอบคลุม</div></div>
+    <div class="rounded-xl p-3" style="background:#0f172a;border:1px solid #1e293b"><div class="text-slate-400">Secondary Keys</div><div class="font-bold text-slate-100 mt-0.5">6–8 คีย์จริง สอดคล้อง Primary</div></div>
+    <div class="rounded-xl p-3" style="background:#0f172a;border:1px solid #1e293b"><div class="text-slate-400">Title Rule</div><div class="font-bold text-slate-100 mt-0.5">≤70 · ขึ้นต้นด้วย Primary เต็มวลี</div></div>
+    <div class="rounded-xl p-3" style="background:#0f172a;border:1px solid #1e293b"><div class="text-slate-400">Meta Rule</div><div class="font-bold text-slate-100 mt-0.5">130–140 · มี SEO Key 1 คำ</div></div>
+  </section>
+  <section class="card p-4 mb-5 flex flex-wrap items-center gap-3">
+    <input id="search" type="text" placeholder="ค้นหา: ชื่อเว็บ / คีย์ / Title / Meta…" class="flex-1 min-w-[200px] rounded-xl px-4 py-2 text-sm outline-none" style="background:#0f172a;border:1px solid #334155;color:#e2e8f0">
+    <div class="flex gap-1.5" id="langFilter">
+      <button class="segbtn active" data-l="all">ทุกภาษา</button>
+      <button class="segbtn" data-l="th">ไทย</button>
+      <button class="segbtn" data-l="en">EN</button>
+    </div>
+  </section>
+  <section id="grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4"></section>
+  <footer class="text-center text-[11px] text-slate-500 mt-8 pb-4">ชุดคีย์บนสุดอ้างอิงจาก SEO Master Dashboard v3.9.1 · คีย์สีเหลืองทอง = เทรฟฟิกสูงสุด (มีอันดับ) · คีย์สีเขียว = ค้นจริงจาก Google ALLOW · อ้างอิงกฎจากชีต 10_ฟิลด์ส่งออก · ห้ามคำโปรยนำหน้า Title/Meta · ต้องขึ้นต้นด้วย Focus เต็มวลี</footer>
+</div>`;
+document.getElementById('search').addEventListener('input',e=>{state.q=e.target.value;render();});
+document.getElementById('langFilter').querySelectorAll('button').forEach(b=>b.onclick=()=>{
+  state.lang=b.dataset.l;
+  document.getElementById('langFilter').querySelectorAll('button').forEach(x=>x.classList.toggle('active',x===b));
+  render();
+});
+document.getElementById('topLangFilter').querySelectorAll('button').forEach(b=>b.onclick=()=>{
+  state.tl=b.dataset.tl;
+  document.getElementById('topLangFilter').querySelectorAll('button').forEach(x=>x.classList.toggle('active',x===b));
+  renderTopKeys();
+});
+renderTopKeys();
+render();
+})();
+</script>
+</body>
+</html>
